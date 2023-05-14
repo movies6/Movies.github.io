@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.5934bca2617fec7ea219a6a76b3f849d?rik=WZIoaekhiugIMw&pid=ImgRaw&r=0" type="image/x-icon">
+	<title>Movies</title>
+	<link rel="stylesheet" href="style.css">
+  <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style for the Connexion button */
+.connexion {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: #ff0000;
+}
+nav .connexion:hover {
+    background-color: #ffffff;
+  color: #ff0000;
+}
+/* Style for hero section */
+.hero {
+   background-image: url('file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/image/230503-dotcom-hero-1440x753-01.webp'); 
+    padding: 50px;
+  text-align: center;
+}
+
+/* Style for hero content */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for hero title */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Style for hero description */
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Style for hero CTA button */
+.cta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+/* Style for categories section */
+.categories {
+  background-color: #333333;
+  padding: 50px;
+}
+
+/* Style for categories title */
+.categories h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Style for each category */
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Style for category image */
+.category img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Style for category title */
+.category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Style for category description */
+.category p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for category CTA button */
+.category a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category a:hover {
+  background-color: #ee5050;
+}
+/* Style for featured section */
+.featured {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+}
+
+
+
+/* Style for each featured item */
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Style for featured item image */
+.featured-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Style for featured item title */
+.featured-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for featured item description */
+.featured-item p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for featured item CTA button */
+.featured-item a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.featured-item a:hover {
+  background-color: #cc5500;
+}
+/* Style for footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style for social media links */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #ff6600;
+}
+
+.social-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container {
+    background-color: #333333;
+    color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  background-color: #ececec;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+.contact-info {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+}
+
+/* Set the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+
+
+
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.section-title {
+  text-align: left;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.category {
+  margin: 20px;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+}
+
+.category img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-title {
+ 
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+}
+
+.category-description {
+
+  font-size: 1.1rem;
+  margin: 10px 20px 20px;
+}
+
+.category-link {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #ffc107;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 0 20px 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="logo">
+        <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/test.html">
+      <img src="https://th.bing.com/th/id/R.5934bca2617fec7ea219a6a76b3f849d?rik=WZIoaekhiugIMw&pid=ImgRaw&r=0" alt="My Website Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20Shows.html">TV Shows</a></li>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/Movies.html">Movies</a></li>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20series.html">Series</a></li>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/My%20list.html">My List</a></li>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/registertest.html" class="connexion">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover the best movies and TV shows</h1>
+      <p>Explore our collection of top-rated movies and TV shows.</p>
+      <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/registerrrr.html" class="cta-btn">Sign up now</a>
+    </div>
+  </section>
+  
+  <!-- Categories section -->
+  <section class="categories">
+    <div class="category">
+      <img src="https://tech-vise.com/wp-content/uploads/2016/08/Track-Your-Favorite-TV-Shows.jpg" alt="Category 1">
+      <h3>TV Shows</h3>
+      <p>Explore our collection of popular TV shows.</p>
+      <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20Shows.html">Browse TV Shows</a>
+    </div>
+    <div class="category">
+      <img src="https://www.torredevigilancia.com/wp-content/uploads/2021/03/O-que-esperar-da-Fase-4-da-Marvel-810x456.jpg" alt="Category 2">
+      <h3>Movies</h3>
+      <p>Find your favorite movies and watch them anytime.</p>
+      <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/Movies.html">Browse Movies</a>
+    </div>
+    <div class="category">
+      <img src="https://th.bing.com/th/id/R.286f55fb6ccff4e3f51d50e6abc6530f?rik=LPUsXpM8eAoTEQ&pid=ImgRaw&r=0" alt="Category 3">
+      <h3>TV Series</h3>
+      <p>Watch our selection of popular TV series.</p>
+      <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20series.html">Browse Series</a>
+    </div>
+  </section>
+    <h1>Contact Us</h1>
+  <div class="container">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: houssambouzid180@mgmail.com</p>
+      <p>Phone: +212-639-080-161</p>
+    </div>
+  </div>
+  <footer>
+    <div class="social-media">
+      <a href="#"><img src="https://th.bing.com/th/id/OIP.b0WkUDI4ZGrfvAylx7ShHwAAAA?pid=ImgDet&rs=1"></a>
+      <a href="#"><img src="https://th.bing.com/th/id/OIP.X2hoVcosHek7A29DVIPc0wHaFG?pid=ImgDet&rs=1"></a>
+      <a href="#"><img src="https://th.bing.com/th/id/R.5682eb3371f668b013e728ef0a7c3e96?rik=14jsLIcT1jIO4g&pid=ImgRaw&r=0"></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+    
+

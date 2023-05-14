@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.5934bca2617fec7ea219a6a76b3f849d?rik=WZIoaekhiugIMw&pid=ImgRaw&r=0" type="image/x-icon">
+	<title>Movies - Movies</title>
+	<link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav {
+  background-color: #000;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+    background-image: url('https://www.torredevigilancia.com/wp-content/uploads/2021/03/O-que-esperar-da-Fase-4-da-Marvel-810x456.jpg');
+  padding: 80px 50px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+}
+
+header input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 1.2rem;
+}
+
+header button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+.gallery {
+			display: grid;
+			grid-template-columns: repeat(6, 2fr);
+			grid-gap: 10px;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		.gallery img:hover {
+			transform: scale(1.1);
+			transition: transform 0.5s ease;
+		}
+
+    a:hover {
+  color: #e50914;
+}   
+.back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      background-color: #414141;
+      color: #ff0000;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .back-to-top:hover {
+      background-color: #fcfcfc;
+    }
+    .back-to-top:before {
+      content: '\2191';
+      font-size: 24px;
+    }
+     
+    button {
+      background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+ 
+}
+
+button:hover {
+  background-color: #3a30be; /* Set background color on hover */
+}
+
+/* Set the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/test.html">Home</a></li>
+      <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20Shows.html">TV Shows</a></li>
+      <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/TV%20series.html">TV series</a></li>
+      <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/Movies.html">Movies</a></li>
+      <li><a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/My%20list.html">My List</a></li>
+    </ul>
+    <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/connexion11.html">
+    <button>Connexion</button>
+  </a>
+  </nav>
+  
+  <header>
+    <h1>Movies</h1>
+    <p>Whether scary, comic, dramatic, romantic or other , there's so much to discover!</p>
+    <form>
+      <input type="email" placeholder="Recherche...">
+      <button>Rechercher</button>
+    </form>
+  </header>
+  <section>
+    <h2>Popular on Netflix</h2>
+    	<div class="gallery">
+        <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/M%C3%A9moire%20meurtri%C3%A8re.html">
+            <img src="https://www.cinemaclock.com/images/posters/1000x1500/22/memoire-meurtriere-2022-affiche.jpg" alt="III"></a>
+            <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/creed%203.html">
+            <img src="https://fr.web.img5.acsta.net/c_310_420/pictures/23/02/10/10/56/3228985.jpg" alt="Image 2"></a>
+            <a href="file:///C:/Users/HP/OneDrive/Documents/projet/cemaphile/john%20wick%20chapter%204.html">
+            <img src="https://cinema.heavymag.com.au/wp-content/uploads/sites/3/2023/03/John-Wick-Chapter-4-Poster-450x675.jpg" alt="Image 3"></a>
+            <img src="https://th.bing.com/th/id/R.b022c752211df3943097b195e88c4606?rik=QpL3iwW0zFtTRg&pid=ImgRaw&r=0" alt="Image 4">
+            <img src="https://th.bing.com/th/id/R.1ec0518ad4c74cf817c0c3f203f86fb6?rik=GRPEKLFQePu0Bg&riu=http%3a%2f%2fgraphicdesignjunction.com%2fwp-content%2fuploads%2f2012%2f05%2flarge%2fmovie-poster-32.jpg&ehk=z16SCM5GZPYbHYptvN3tDQ8aiUHuZa0Cv161sGbRkyc%3d&risl=&pid=ImgRaw&r=0" alt="Image 5">
+            <img src="https://th.bing.com/th/id/R.1016bfa06fa08e31feb75b0740f1bfb0?rik=8NT7JEu7U2mR2Q&riu=http%3a%2f%2fgraphicdesignjunction.com%2fwp-content%2fuploads%2f2012%2f10%2flarge%2fmovie%2bposters%2b31.jpg&ehk=l%2f%2btk4z8Qsa5gNnhmBzgILwqA%2bggAjo7bkeI4v%2fPSl0%3d&risl=&pid=ImgRaw&r=0" alt="Image 6">
+            <img src="https://th.bing.com/th/id/R.30fc1b7953fd5599d724c0bc39c2522c?rik=dH6%2fwOtHnXq48Q&pid=ImgRaw&r=0" alt="III">
+            <img src="https://th.bing.com/th/id/OIP.k9bqE6PX6L8sr2zgxT35aQAAAA?pid=ImgDet&w=419&h=600&rs=1" alt="Image 2">
+            <img src="https://th.bing.com/th/id/OIP.xj36Ou9TK-qqFsXKSFCiRwHaLH?pid=ImgDet&rs=1" alt="Image 3">
+            <img src="https://cdn-img.look-in.com.tw/upload/images/%E3%80%8A%E6%83%A1%E9%9D%88%E6%8D%95%E6%89%8B%E3%80%8B%E9%9B%BB%E5%BD%B1%E6%B5%B7%E5%A0%B1_10%E6%9C%886%E6%97%A5%E5%9C%A8%E5%8F%B0%E4%B8%8A%E6%98%A0.jpg" alt="Image 4">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https:%2F%2Fblog.kakaocdn.net%2Fdn%2FIvUi5%2FbtqHCWB58h4%2F1rdG5i2ta1IVSScYV6DpN0%2Fimg.jpg" alt="Image 5">
+            <img src="https://i.ebayimg.com/images/g/r1QAAOxyyghQ7Ym8/s-l300.jpg" alt="Image 6">
+            <img src="https://th.bing.com/th/id/R.aa918b4a09e08a0d04924a923dc78019?rik=CXYJEjWylV1ICg&pid=ImgRaw&r=0" alt="III">
+            <img src="https://i.pinimg.com/originals/38/13/ed/3813edbfae8633fd3a5403e1e496dbe4.jpg" alt="Image 2">
+            <img src="https://th.bing.com/th/id/OIP.4TZ_Ac9o-OKKQUSnilxysQHaKe?pid=ImgDet&rs=1" alt="Image 4">
+            
+    </div>
+  </section>
+  <section>
+    <h2>Trending Now</h2>
+    <div class="gallery">
+
+    </div>
+  </section>
+  <footer>
+    <div class="gallery">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\uZT5sWrERVYWLR8iwZYCb4vBKvA.jpg" alt="III">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\OIP (1).jpeg" alt="Image 2">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\R.jpeg" alt="Image 3">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\61da8438155793.57575971afe13.jpg" alt="Image 4">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\R (3).jpeg" alt="Image 5">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\mulan-photo-u3.jpeg" alt="Image 6">
+        <img src="https://th.bing.com/th/id/R.30fc1b7953fd5599d724c0bc39c2522c?rik=dH6%2fwOtHnXq48Q&pid=ImgRaw&r=0" alt="III">
+        <img src="https://th.bing.com/th/id/OIP.k9bqE6PX6L8sr2zgxT35aQAAAA?pid=ImgDet&w=419&h=600&rs=1" alt="Image 2">
+        <img src="https://th.bing.com/th/id/OIP.xj36Ou9TK-qqFsXKSFCiRwHaLH?pid=ImgDet&rs=1" alt="Image 3">
+        <img src="https://cdn-img.look-in.com.tw/upload/images/%E3%80%8A%E6%83%A1%E9%9D%88%E6%8D%95%E6%89%8B%E3%80%8B%E9%9B%BB%E5%BD%B1%E6%B5%B7%E5%A0%B1_10%E6%9C%886%E6%97%A5%E5%9C%A8%E5%8F%B0%E4%B8%8A%E6%98%A0.jpg" alt="Image 4">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https:%2F%2Fblog.kakaocdn.net%2Fdn%2FIvUi5%2FbtqHCWB58h4%2F1rdG5i2ta1IVSScYV6DpN0%2Fimg.jpg" alt="Image 5">
+        <img src="https://i.ebayimg.com/images/g/r1QAAOxyyghQ7Ym8/s-l300.jpg" alt="Image 6">
+        <img src="https://th.bing.com/th/id/R.aa918b4a09e08a0d04924a923dc78019?rik=CXYJEjWylV1ICg&pid=ImgRaw&r=0" alt="III">
+        <img src="https://i.pinimg.com/originals/38/13/ed/3813edbfae8633fd3a5403e1e496dbe4.jpg" alt="Image 2">
+        <img src="https://th.bing.com/th/id/OIP.4TZ_Ac9o-OKKQUSnilxysQHaKe?pid=ImgDet&rs=1" alt="Image 4">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\OIP.jpeg" alt="Image 5">
+        <img src="C:\Users\HP\OneDrive\Documents\projet\cemaphile\image\Taken_b7497a42.jpg" alt="Image 5">
+
+
+</div>
+<button class="back-to-top" onclick="backToTop()"></button>
+
+  <script>
+   function backToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+      const backToTopBtn = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 500) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    };
+  </script>
+</body>
+</html>
